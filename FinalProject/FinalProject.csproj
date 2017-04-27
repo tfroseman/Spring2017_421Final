@@ -64,7 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AreaOfStudy.cs" />
     <Compile Include="Area_of_Study.cs" />
     <Compile Include="Cert.cs" />
     <Compile Include="Course.cs" />
