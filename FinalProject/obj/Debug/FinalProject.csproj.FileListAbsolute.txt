@@ -1,5 +1,0 @@
-Y:\Code\Spring2017\421\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
-\\psbdfilesrvr.psu-erie.bd.psu.edu\student\TFR5029\private\desktop\FinalProject\FinalProject\obj\Debug\FinalProject.Form1.resources
-\\psbdfilesrvr.psu-erie.bd.psu.edu\student\TFR5029\private\desktop\FinalProject\FinalProject\obj\Debug\FinalProject.Functions.resources
-\\psbdfilesrvr.psu-erie.bd.psu.edu\student\TFR5029\private\desktop\FinalProject\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
-\\psbdfilesrvr.psu-erie.bd.psu.edu\student\TFR5029\private\desktop\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.Cache
