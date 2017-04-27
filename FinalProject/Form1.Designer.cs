@@ -41,8 +41,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.waitListBox = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.removeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // courseIDTextBox
@@ -60,7 +60,7 @@
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.button1_Click);
+            this.searchButton.Click += new System.EventHandler(this.searchButtonClick);
             // 
             // searchListingBox
             // 
@@ -75,6 +75,7 @@
             this.searchListingBox.Name = "searchListingBox";
             this.searchListingBox.Size = new System.Drawing.Size(312, 433);
             this.searchListingBox.TabIndex = 2;
+            this.searchListingBox.SelectedValueChanged += new System.EventHandler(this.selectedValueChanged);
             // 
             // schoolComboBox
             // 
@@ -171,23 +172,25 @@
             this.waitListBox.Size = new System.Drawing.Size(120, 173);
             this.waitListBox.TabIndex = 12;
             // 
-            // button1
+            // addButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addButton.Location = new System.Drawing.Point(12, 136);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.TabIndex = 13;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // button2
+            // removeButton
             // 
-            this.button2.Location = new System.Drawing.Point(12, 165);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Remove Course";
-            this.button2.UseVisualStyleBackColor = true;
+            this.removeButton.Location = new System.Drawing.Point(12, 165);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(75, 23);
+            this.removeButton.TabIndex = 14;
+            this.removeButton.Text = "Remove Course";
+            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
             // Form1
             // 
@@ -195,8 +198,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(817, 510);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.removeButton);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.waitListBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -232,8 +235,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox waitListBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button removeButton;
     }
 }
 

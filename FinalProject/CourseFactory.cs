@@ -34,5 +34,18 @@ namespace FinalProject
             // We could also do course.First().ID to get the ID value from the Course as well
             return course.First();
         }
+
+        internal IEnumerable<Course> getClasses(string ID)
+        {
+            //Open connection to database
+            database.Open();
+
+            //Use Dapper to query database using sql. @ is used for string replacement.
+            var course = database.Query<Course>("select title, description, number = @courseID, school, instructor, required FROM Course", new { courseID = ID });
+
+            // course will be an IEnumerable object so in this case we want the first object.
+            // We could also do course.First().ID to get the ID value from the Course as well
+            return course;
+        }
     }
 }
