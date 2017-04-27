@@ -68,6 +68,7 @@
     <Compile Include="Cert.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="CourseFactory.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="Filter.cs" />
     <Compile Include="Filter_Open.cs" />
     <Compile Include="Filter_School.cs" />

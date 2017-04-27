@@ -8,12 +8,12 @@ namespace FinalProject
 {
     class Course : ICourse
     {
-        public String description;
-        public String title;
-        public String course_number;
-        //public School school;
-        public List<String> required;
-        public String instructor;
+        public String description { get; set; }
+        public String title { get; set; }
+        public String course_number { get; set; }
+        public string school { get; set; }
+        public string required { get; set; }
+        public String instructor { get; set; }
 
         public string getDesc()
         {

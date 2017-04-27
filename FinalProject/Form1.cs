@@ -19,7 +19,8 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            CourseFactory courseFactory = new CourseFactory();
+            courseFactory.getClass("421");
         }
     }
 }
