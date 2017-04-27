@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    class Student : Student_IF
+    abstract class Student : Student_IF
     {
         private StudentSchedule schedule;
         private String name;
@@ -15,6 +15,23 @@ namespace FinalProject
         private String DOB;
         private int completedCredits;
         private MajorDecorater major;
+
+        public Student()
+        {
+
+        }
+
+        public Student(Student student)
+        {
+            this.schedule = student.getSchedule();
+            this.name = student.getName();
+            this.gender = student.gender;
+            this.school = student.getSchool();
+            this.DOB = student.getDOB();
+            this.completedCredits = student.getCredits();
+            this.major = student.getMajor();
+        }
+
         public int getCredits()
         {
             return completedCredits;
@@ -40,12 +57,12 @@ namespace FinalProject
             return schedule;    
         }
 
-        ///TODO logic for next state here
-        public Student getNextYear()
+        public School getSchool()
         {
-            
-            return null;
+            return school;
         }
+
+        abstract public Student getNextYear();
       
     }
 }
