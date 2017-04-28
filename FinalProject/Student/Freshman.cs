@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FinalProject
+namespace FinalProject.Student
 {
-    class Junior : Student
+    class Freshman: Student
     {
         private StudentSchedule schedule;
         private String name;
@@ -16,15 +12,11 @@ namespace FinalProject
         private int completedCredits;
         private MajorDecorater major;
 
-        public Junior(Student student) : base(student)
-        {
-        }
-
         public override Student getNextYear()
         {
-            if(completedCredits > 75)
+            if (completedCredits >= 25)
             {
-                return new Senior(this);
+                return new Sophmore(this);
             }
             else
             {
