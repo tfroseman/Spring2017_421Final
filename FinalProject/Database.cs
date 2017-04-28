@@ -12,7 +12,7 @@ namespace FinalProject
     {
         public static string DBFile
         {
-            get { return "C:\\Users\\TFR5029\\Desktop\\database.sqlite; Version=3; Read Only=True;"; }
+            get { return System.Environment.CurrentDirectory + "\\..\\..\\..\\database.sqlite; Version=3; Read Only=True;"; }
         }
 
         public static SQLiteConnection SimpleDbConnection()
