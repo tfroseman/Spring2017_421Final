@@ -70,6 +70,7 @@
     <Compile Include="CourseFactory.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Filter.cs" />
+    <Compile Include="Filter_Closed.cs" />
     <Compile Include="Filter_Open.cs" />
     <Compile Include="Filter_School.cs" />
     <Compile Include="Form1.cs">
