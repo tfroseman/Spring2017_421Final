@@ -8,6 +8,6 @@ namespace FinalProject
 {
     interface Filter
     {
-        List<Course> matchesFilter();
+        List<Course> matchesFilter( List <Course> courses);
     }
 }
