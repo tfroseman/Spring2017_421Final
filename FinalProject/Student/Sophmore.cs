@@ -4,16 +4,23 @@ namespace FinalProject.Student
 {
     class Sophmore : Student
     {
-        private StudentSchedule schedule;
-        private String name;
-        //private Gender gender;
-        //private School school;
-        private String DOB;
-        private int completedCredits;
-        private MajorDecorater major;
+        public StudentSchedule schedule;
+        public String name;
+        public String gender;
+        public String school;
+        public String DOB;
+        public int completedCredits;
+        public Area_of_Study major;
+
 
         public Sophmore(Student student) : base(student)
-        {
+        {   this.schedule = student.getSchedule();
+            this.name = student.getName();
+            this.gender = student.gender;
+            this.school = student.school;
+            this.DOB = student.getDOB();
+            this.completedCredits = student.getCredits();
+            this.major = student.getMajor();
         }
 
         public override Student getNextYear()
@@ -26,6 +33,10 @@ namespace FinalProject.Student
             {
                 return this;
             }
+        }
+        public override string yearName()
+        {
+            return "Sophmore";
         }
     }
 }

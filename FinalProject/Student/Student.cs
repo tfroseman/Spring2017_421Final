@@ -4,13 +4,13 @@ namespace FinalProject.Student
 {
     abstract class Student : Student_IF
     {
-        private StudentSchedule schedule;
-        private String name;
-        private Gender gender;
-        private School school;
-        private String DOB;
-        private int completedCredits;
-        private MajorDecorater major;
+        public StudentSchedule schedule;
+        public String name;
+        public String gender;
+        public String school;
+        public String DOB;
+        public int completedCredits;
+        public Area_of_Study major;
 
         public Student()
         {
@@ -38,7 +38,7 @@ namespace FinalProject.Student
             return DOB;
         }
 
-        public MajorDecorater getMajor()
+        public Area_of_Study getMajor()
         {
             return major;
         }
@@ -53,12 +53,14 @@ namespace FinalProject.Student
             return schedule;    
         }
 
-        public School getSchool()
+        public String getSchool()
         {
             return school;
         }
 
         abstract public Student getNextYear();
+
+        abstract public String yearName();
       
     }
 }

@@ -9,7 +9,7 @@ namespace FinalProject.Student
         String getName();
         //Gender getGender();
         String getDOB();
-        MajorDecorater getMajor();
+        Area_of_Study getMajor();
         //School getSchool();
         int getCredits();
 

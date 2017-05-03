@@ -9,6 +9,10 @@ namespace FinalProject
     class major : Area_of_Study
     {
         private String title;
+        public major(String name)
+        {
+            this.title = name;
+        }
 
         public string getTitle()
         {
