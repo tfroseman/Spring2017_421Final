@@ -43,6 +43,9 @@
             this.waitListBox = new System.Windows.Forms.ListBox();
             this.addButton = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // courseIDTextBox
@@ -71,9 +74,9 @@
             "PHYSICS 212",
             "MATH 140",
             "ART 101"});
-            this.searchListingBox.Location = new System.Drawing.Point(139, 28);
+            this.searchListingBox.Location = new System.Drawing.Point(207, 28);
             this.searchListingBox.Name = "searchListingBox";
-            this.searchListingBox.Size = new System.Drawing.Size(312, 433);
+            this.searchListingBox.Size = new System.Drawing.Size(244, 433);
             this.searchListingBox.TabIndex = 2;
             this.searchListingBox.SelectedValueChanged += new System.EventHandler(this.selectedValueChanged);
             // 
@@ -111,11 +114,12 @@
             this.courseInfoBox.TabIndex = 6;
             this.courseInfoBox.Text = "Art 101\nThis is an introduction to the concept of art.\nCredits : 3.0\nMeets: MWF 8" +
     "-9AM";
+            this.courseInfoBox.TextChanged += new System.EventHandler(this.courseInfoBox_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 12);
+            this.label3.Location = new System.Drawing.Point(204, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 7;
@@ -192,12 +196,43 @@
             this.removeButton.UseVisualStyleBackColor = true;
             this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(12, 224);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(162, 201);
+            this.richTextBox1.TabIndex = 15;
+            this.richTextBox1.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 195);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Student_info";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(15, 437);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Check_Credit_Level";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(817, 510);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.removeButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.waitListBox);
@@ -237,6 +272,9 @@
         private System.Windows.Forms.ListBox waitListBox;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button removeButton;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
     }
 }
 

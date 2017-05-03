@@ -3,29 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace FinalProject
 {
     class Freshman: Student
     {
-        private StudentSchedule schedule;
-        private String name;
-        //private Gender gender;
-        //private School school;
-        private String DOB;
-        private int completedCredits;
-        private MajorDecorater major;
+        public StudentSchedule schedule =null;
+        public String name = null;
+        public String gender;
+        public School school;
+        public String DOB;
+        public int completedCredits;
+        public Area_of_Study major;
 
         public override Student getNextYear()
         {
             if (completedCredits >= 25)
             {
                 return new Sophmore(this);
+                
             }
             else
             {
                 return this;
             }
+        }
+
+        public override string yearName()
+        {
+            return "Freshman";
         }
     }
 }
