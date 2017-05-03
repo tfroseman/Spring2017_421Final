@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
+
 namespace FinalProject
 {
     public partial class Form1 : Form
@@ -59,12 +60,7 @@ namespace FinalProject
 
 
         }
-        /// <summary>
-        /// Clear all of the demo values
-        /// </summary>
-        /// 
-
-           private void printStudent(Student s)
+        private void printStudent(Student s)
         {
             richTextBox1.Text = " ";
             richTextBox1.AppendText(s.getName() + "\n");
@@ -77,6 +73,10 @@ namespace FinalProject
             richTextBox1.AppendText(s.yearName() + "\n");
         }
 
+        /// <summary>
+        /// Clear all of the demo values
+        /// </summary>
+        /// 
         private void ClearDemoItems()
         {
             searchListingBox.Items.Clear();
@@ -92,10 +92,10 @@ namespace FinalProject
            // courseList = courseFactory.getClasses(courseIDTextBox.Text).ToList();
 
             //Insert each course title into the search list box
-            foreach(Course course in courseList )
-            {
-                searchListingBox.Items.Add(course.title);
-            }
+//            foreach(Course course in courseList )
+//            {
+//                searchListingBox.Items.Add(course.title);
+//            }
         }
 
         /// <summary>
