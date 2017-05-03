@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace FinalProject
 {
@@ -12,9 +13,13 @@ namespace FinalProject
         public int completedCredits;
         public Area_of_Study major;
 
-        public Student()
+        public Student(string name, string gender, string school, string dob, int credits)
         {
-
+            this.name = name;
+            this.gender = gender;
+            this.school = school;
+            this.DOB = dob;
+            this.completedCredits = credits;
         }
 
         public Student(Student student)
